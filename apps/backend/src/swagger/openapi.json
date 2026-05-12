@@ -1,0 +1,79 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Mini Task Management API",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/auth/signup": {
+      "post": {
+        "security": [],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/projects": {
+      "get": { "responses": { "200": { "description": "OK" } } },
+      "post": { "responses": { "201": { "description": "Created" } } }
+    },
+    "/projects/{id}": {
+      "get": { "responses": { "200": { "description": "OK" } } },
+      "patch": { "responses": { "200": { "description": "OK" } } },
+      "delete": { "responses": { "204": { "description": "No Content" } } }
+    },
+    "/tasks": {
+      "get": { "responses": { "200": { "description": "OK" } } },
+      "post": { "responses": { "201": { "description": "Created" } } }
+    },
+    "/tasks/{id}": {
+      "patch": { "responses": { "200": { "description": "OK" } } },
+      "delete": { "responses": { "204": { "description": "No Content" } } }
+    },
+    "/analytics/dashboard": {
+      "get": { "responses": { "200": { "description": "OK" } } }
+    }
+  }
+}
+

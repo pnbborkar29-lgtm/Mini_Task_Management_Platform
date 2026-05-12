@@ -1,0 +1,13 @@
+{
+  "name": "mini-task-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev":  "npm run dev --workspaces",
+    "build": "npm run build -ws",
+    "lint": "npm run lint -ws"
+  }
+}
+
