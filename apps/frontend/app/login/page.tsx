@@ -13,6 +13,7 @@ const LoginSchema = z.object({
   password: z.string().min(1),
 });
 console.log("Login page loaded");
+console.log("LoginSchema:", LoginSchema);
 export default function LoginPage() {
   const router = useRouter();
   const [form, setForm] = useState({ email: "", password: "" });
