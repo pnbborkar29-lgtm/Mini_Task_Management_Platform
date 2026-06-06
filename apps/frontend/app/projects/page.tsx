@@ -40,7 +40,7 @@ export default function ProjectsPage() {
       setProjects(data.projects);
     } catch (e) {
       setError(
-        e instanceof ApiClientError ? e.message : "Failed to load projects...",
+        e instanceof ApiClientError ? e.message : "Failed to load projects....",
       );
     } finally {
       setLoading(false);
