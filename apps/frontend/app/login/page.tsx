@@ -52,7 +52,7 @@ export default function LoginPage() {
         <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
           <div className="mb-6">
             <div className="text-xl font-semibold text-zinc-900">Login</div>
-            <div className="mt-1 text-sm text-zinc-600">Sign in to manage projects and tasks.</div>
+            <div className="mt-1 text-sm text-zinc-600">Sign in to manage projects and tasks.....;;;</div>
           </div>
 
           <form className="space-y-4" onSubmit={onSubmit}>
